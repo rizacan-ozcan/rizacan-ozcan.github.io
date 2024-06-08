@@ -1,0 +1,309 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: #f0f2f5;
+    /* yellow */
+    height: 100%;
+    width: 100%;
+}
+/* Navbar CSS */
+nav {
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+    /* 333 */
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #052e66;
+    /* sonradan eklendi */
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+/* Adjusting widths */
+.side-img-left, .side-img-right {
+    flex: 0 0 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-img-left img, .side-img-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-block {
+    flex: 1 1 60%;
+    text-align: center;
+    border: 1px solid #cccccc;
+    /* 333 */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.main-block header {
+    margin: 0;
+}
+
+.main-block header h1 {
+    font-size: 3em;
+    margin-top: 20px;
+    color: #052e66;
+}
+
+.main-block header h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.profile-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 400px;
+    padding-top: 0;
+    margin-top: 100px;
+    /* padding-top: 1rem; */
+}
+
+
+/* Header CSS */
+header {
+    background-color: #052e66;
+    height: 700px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+header .container h1 {
+    font-size: 3rem;
+    color: #FFF;
+    padding-top: 5rem;
+}
+
+header .container h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+header .container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    padding-top: 0;
+    /* padding-top: 1rem; */
+}   
+
+.main-container .side-img-right {
+    display: right;
+}
+
+/* Projects */
+#projects .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.boxes .describ-box {
+    border: 1px solid #cccccc;
+    /* 333 */
+    display: left;
+    width: 30%;
+    margin: 0.5rem;
+    position: relative;
+    height: 450px;
+    background-color: #ffffff;
+}
+
+.boxes .project-box {
+    border: 1px solid #cccccc;
+    width: 75rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.boxes .project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s;
+}
+.boxes .describ-box h1{
+    padding-top: 3.5rem;
+}
+.boxes .describ-box h2{
+    padding-top: 5.5rem;
+}
+.boxes .describ-box ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxes .describ-box ul li{
+    background-color: #052e66;
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.boxes .describ-box ul li i {
+    margin-right: 0.5rem;
+    color: #052e66;
+}
+/* About CSS */
+#about{
+    background-color: #052e66;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+#about .container h2{
+    font-size: 4rem;
+    color: #ffffff;
+}
+#about .container .about-text{
+    width: 50%;
+}
+#about .container .about-text p{
+    font-size: 2rem;
+}
+/* Footer CSS */
+footer{
+    color: #FFF;
+    margin-top: 0;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem 0;
+    width: 100%;
+}
+footer .container .col{
+    width: 33%;
+    margin-bottom: 2rem;
+}
+footer .container h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+footer .container p{
+    text-align: center;
+}
+footer .container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .container ul li{
+    margin-right: 1rem;
+}
+.input-container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    padding-left: 110px;
+}
+.input-container button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #052e66;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.input-container button:hover{
+    background-color: #012821;
+}
+/* Copyrighyt CSS */
+#copyright{
+    padding-top: 2rem;
+    text-align: center;
+    background-color: #052e66;
+    color: #FFF;
+}
+#copyright a{
+    color: #ffffff;
+}
+#copyright a:hover{
+    opacity: 0.7;
+}
